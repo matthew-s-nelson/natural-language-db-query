@@ -1,8 +1,8 @@
 import sqlite3
 
 def initialize_db():
-    db_file_path = 'kitchen.db'
-    sql_file_path = 'kitchendbsqlite.sql'
+    db_file_path = '../kitchen.db'
+    sql_file_path = '../kitchendbsqlite.sql'
 
     with open(sql_file_path, 'r') as sql_file:
         sql_script = sql_file.read()

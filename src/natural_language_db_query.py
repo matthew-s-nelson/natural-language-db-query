@@ -1,6 +1,6 @@
 import json
 from db_interactions import initialize_db
-# from openai import OpenAI
+from openai import OpenAI
 
 
 # Initialize the sqlite database
@@ -10,8 +10,15 @@ conn = initialize_db()
 #     config = json.load(f)
 
 # client = OpenAI(
-#   api_key=config["api_key"]
+#     api_key=config["api_key"]
 # )
+
+# response = client.responses.create(
+#     model="gpt-5",
+#     input="Write a one-sentence bedtime story about a unicorn."
+# )
+
+# print(response.output_text)
 
 # response = client.responses.create(
 #   model="gpt-5-nano",
